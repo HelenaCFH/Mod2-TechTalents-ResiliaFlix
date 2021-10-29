@@ -15,14 +15,43 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="PaginaCadastroUsuario.css">
         <script src="PaginaCadastroUsuario.js"></script>
-        <title> Página Cadastro Usuário </head>
+        <title> Página Cadastro Usuário </title>
     </head>
 
     <body>
         
+        <header>
+            <h1> ResiliaFlix </h1>
+            <h3> LOGIN </h3>
+        </header>
+
+
+        <main>
+            <div class="bloco">
+                <h2> Criar Conta </h2>
+                <hr>
+
+                <form>
+                    <input type="text" class="campoInteiro" required placeholder="Nome">
+                    <input type="email" class="campoInteiro" required placeholder="E-mail">
+                    <input type="password" class="meioCampo" required placeholder="Senha">
+                    <input type="password" class="meioCampo" required placeholder="Confirmação de Senha">
+                    <input type="text" class="meioCampo" required placeholder="RG"> 
+                    <input type="text" class="meioCampo" required placeholder="CEP">
+                    <input type="text" class="campoInteiro" required placeholder="Endereço">
+                    <input type="submit" value="Continuar" id="botaoContinuar">
+                </form>
+
+            </div>
+        </main>
+
+
+        <footer>
+
+        </footer>
 
     </body>
 
