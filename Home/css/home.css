@@ -181,12 +181,18 @@ body {
     padding: 50px;
     text-align: center;
     font-size:small;
-    color: white;
+    color: rgb(252, 222, 222);
+    background-color: #1E1E1E;
   }
 
   .footer li{
       list-style: none;
       display: inline;
       padding: auto;
-      margin-left: 20px
+      margin-left: 20px;
+  }
+
+  .footer li a{
+      text-decoration: none;
+      color: white;
   }
