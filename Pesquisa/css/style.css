@@ -13,10 +13,6 @@ header {
 header img{
     width: 200px;
 }
-.btn-custom-white{
-    background-color: #fff;
-    width: 300px;
-}
 .btn-custom-white:hover{
     background-color: rgba(255, 255, 255,0.2);
 }
@@ -59,7 +55,7 @@ header img{
 
 #hero{
     height: 700px;
-    background-image: url(../img/FilmeKate.png);
+    background-color:  #000000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
