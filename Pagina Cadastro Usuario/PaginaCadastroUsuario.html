@@ -22,13 +22,40 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css"/>
     </head>
 
     <body>
-        
-        <header>
-            <h1> ResiliaFlix </h1>
-            <h3> LOGIN </h3>
+
+        <header class="row">
+            <div class="col-2" >
+                <img src="logo.png"/>
+            </div>
+            <div class="col-8">
+                <ul class="menu_list">
+                    <li>
+                        <a href="#">Página Inicial</a>
+                    </li>  
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-magnify text-white">
+                                Busca
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-account text-white"></span> 
+                            Usuárie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn">
+                            <span class="mdi mdi-logout-variant"></span>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
         </header>
 
 
@@ -43,8 +70,13 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
                     <input type="password" class="meioCampo" required placeholder="Senha">
                     <input type="password" class="meioCampo" required placeholder="Confirmação de Senha">
                     <input type="text" class="meioCampo" required placeholder="RG"> 
-                    <input type="text" class="meioCampo" required placeholder="CEP">
-                    <input type="text" class="campoInteiro" required placeholder="Endereço">
+                    <input type="text" class="meioCampo" id="cep" required placeholder="CEP">
+                    <input type="text" class="meioCampo" id="rua" required placeholder="Rua">
+                    <input type="number" class="meioCamp" required placeholder="Número">
+                    <input type="text" class="meioCamp" required placeholder="Complemento">
+                    <input type="text" class="meioCamp" id="cidade" required placeholder="Cidade">
+                    <input type="text" class="meioCamp" id="bairro" required placeholder="Bairro">
+                    <input type="text" class="meioCamp" id="estado" required placeholder="Estado">
                     <input type="submit" value="Continuar" id="botaoContinuar">
                 </form>
 
