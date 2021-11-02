@@ -11,7 +11,7 @@
     <link href="../bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css" />
-    <!-- <script type="text/javascript" src="script.js"> </script> -->
+    <script type="text/javascript" src="script.js"></script>
     <title>Home</title>
 </head>
 
@@ -27,7 +27,7 @@
             <div class="row justify-content-md-center">
                 <div class="card ">
                     <div class="card-body">
-                        <form>
+                        <form onsubmit="enviarEmail(); return false;">
                             <div class="col-12">
                                 <h5 class="card-title">Recuperação de Senha</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Serão enviadas para seu e-mail, instruções
@@ -37,7 +37,7 @@
                                 <input class="form-control" type="email" name="e-mail" id="email"
                                     placeholder="Digite o e-mail cadastrado">
                             </div>
-                            <button type="submit" href="#" class="btn btn-outline-dark">Enviar</a>
+                            <button type="submit" href="#" id="btn-enviar" class="btn btn-outline-dark">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
     </main>
 
     <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
+        aria-atomic="true" id="toast-confimacao">
         <div class="d-flex">
             <div class="toast-body">
                 E-mail enviado com sucesso!
