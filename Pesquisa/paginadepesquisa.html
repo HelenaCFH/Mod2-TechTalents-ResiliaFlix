@@ -47,13 +47,17 @@
             </header> 
 
             <main>
-                <div class="container" id ="container-pesquisa">
-                    <span class="mdi mdi-magnify">
-                        Procurar filmes
-                    </span>
-                    <form>
-                        <input type="search" class="form-control" id="search-form">
-                    </form>
+                <div class="container-fluid" id="container-searchbox">
+                        <div>
+                            <span class="mdi mdi-magnify" id="search-movies">
+                                Procurar filmes
+                            </span>
+                        </div>
+                        <form>
+                            <input type="search" class="form-control" placeholder="Digite o nome do filme e pressione Enter/Ir" id="search-form" aria-label="Search"
+                            aria-describedby="search-addon">
+                        </form>
+
                 </div>
             </main>
         </div>
