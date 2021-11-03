@@ -1,15 +1,35 @@
-/* 
+/*MENSAGEM PREENCHIMENTO CAMPOS*/ 
 
-function mensagem() {
-    if botão click == True , específiaçoes ok {
-        return alert/doc.write.. -> Cadastro reaizado! 
+var sessoesArr = document.querySelectorAll('input');
+
+function validaFormulario() {
+    let contador = 0
+    for(var i = 0; i < sessoesArr.length; i++) {
+        if (sessoesArr[i].value == '') {
+            contador += 1;
+        }
     }
+    if (contador == 0) {
+        alert("Cadastro realizado com Sucesso!")
+        return true
+    } else {
+        alert("Favor preencher os dados solicitados para efetivar o cadastro!")
+        return false
+    }
+}
+
+function validaEmail(email) {
+    if ((email.toString()).includes('@') == false) {
+        alert("Insira um e-mail válido")
+    } 
 } 
 
-let botao = document.queryselector('button');
-botao.onclick = mensagem
 
-*/
+document.getElementById("email").addEventListener('focusout', validaEmail(document.getElementById('email')));
+document.getElementById("botaoContinuar").addEventListener('click', validaFormulario);
+
+
+/*API VIACEP*/ 
 
 const limparFormulario = (endereco) => {
     document.getElementById('rua').value = "";
@@ -47,4 +67,3 @@ const pesquisaCep = async() => {
 }
 
 document.getElementById("cep").addEventListener('focusout', pesquisaCep);
-
