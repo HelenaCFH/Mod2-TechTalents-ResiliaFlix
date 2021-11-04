@@ -17,6 +17,9 @@ class Controller
     }
 }
 
+document.getElementById("search-form").addEventListener()
+
+
 function storeUserInput()//pega a string inserida no formulário de busca
 {
         alert("Busca realizada!")
