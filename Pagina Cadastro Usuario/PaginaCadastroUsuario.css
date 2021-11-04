@@ -1,10 +1,21 @@
 body {
-    background: rgb(0,0,0);
+    background-image:radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
+
+/* HEADER */
+
 header {
-    padding: 2em;
+    padding-left: 2em;
     width: 100%;
+    background: black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
 }
 
 header img {
@@ -32,12 +43,15 @@ header img {
    color:gray;
 }
 
+
+/* MAIN/PRINCIPAL */
+
 .bloco {
     border: 2px solid rgb(212, 184, 23);;   
     padding: 3em; 
     width: 50%;
     margin: auto;
-    margin-top: 5em;
+    margin-top: 12em;
     margin-bottom: 7em;
     border-radius: 10px;
 }
@@ -92,6 +106,9 @@ main form {
     color: rgb(0,0,0);
 }
 
+
+/* FOOTER */
+
 footer {
     display: flex;
     background-color: rgb(30, 30, 30);
@@ -119,3 +136,25 @@ footer p a {
 footer p a:hover {
     color:gray;
 }
+
+/* TOAST */
+
+.toast {
+    margin-left: 35.5%;
+    width: 29%;
+}
+
+
+
+
+/* MEDIA QUERY - MOBILE */
+
+@media screen and (max-width:948px) {
+    
+    .campoInteiro, .meioCampo, #rua, #numero, #botaoContinuar {
+       width: 100%; 
+       margin-left: -1em;
+       margin-right: -1em;
+    }
+}
+
