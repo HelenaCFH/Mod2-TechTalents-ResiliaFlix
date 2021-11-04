@@ -1,6 +1,5 @@
 body {
-    background: linear-gradient(rgb(30, 30, 30), rgb(0, 210, 217));
-    background-repeat:no-repeat;
+    background: rgb(0,0,0);
 }
 
 header {
@@ -34,12 +33,13 @@ header img {
 }
 
 .bloco {
-    border: 2px solid white;   
+    border: 2px solid rgb(212, 184, 23);;   
     padding: 3em; 
     width: 50%;
     margin: auto;
     margin-top: 5em;
     margin-bottom: 7em;
+    border-radius: 10px;
 }
 
 main h2 {
@@ -48,16 +48,7 @@ main h2 {
     font-family:'Inter', sans-serif;
     font-size: 2em;
     margin-bottom: 1em;
-}
-
-main hr {
-    color: white;
-    margin: auto;
-    width: 83%;
-    text-align: center;
-    border: 0 1px solid whitesmoke;
-    opacity: 100%;
-    margin-bottom: 1em;
+    font-weight: bold;
 }
 
 main form {
@@ -68,6 +59,7 @@ main form {
 .campoInteiro, .meioCampo, #rua, #numero {
     padding: 1em;
     margin: 1em;
+    border-radius: 10px;
 }
 
 .campoInteiro {
@@ -87,7 +79,7 @@ main form {
 }
 
 #botaoContinuar {
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: bold;
     width: 85%;
     height: 4em;
@@ -96,8 +88,8 @@ main form {
 
 #botaoContinuar:hover {
     transform: scale(1.1);
-    background: rgb(81, 160, 81);
-    color: white;
+    background:rgb(212, 184, 23);
+    color: rgb(0,0,0);
 }
 
 footer {
@@ -106,6 +98,7 @@ footer {
     justify-content: center;
     padding: 3em;
     margin-top: 1em;
+    width: 100%;
 }
  
 footer p {
@@ -115,5 +108,14 @@ footer p {
 }
 
 footer p:hover {
+    color:gray;
+}
+
+footer p a { 
+    color: #fff;
+    text-decoration: none;
+}   
+
+footer p a:hover {
     color:gray;
 }
