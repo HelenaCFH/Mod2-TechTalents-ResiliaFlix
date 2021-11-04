@@ -5,7 +5,7 @@ body {
 header {
     background: rgb(0,0,0);
     padding: 14px 0 0 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 2;
@@ -38,7 +38,7 @@ header img{
 }
 
 main {
-    position: fixed;
+    position: absolute; /*trocar para fixed caso queira a imagem flutuante*/
     margin: 0;
     top: 75px;
     left: 0;
@@ -50,7 +50,6 @@ main {
 
     background-image:radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url("bg4.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -74,4 +73,35 @@ main {
     border-radius: 10px;
     text-align: center;
     height: 35px;
+}
+
+footer {
+    position: absolute;
+    left:0;
+    top:100%;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    justify-content: center;
+    padding: 3em;
+    margin-top: 1em;
+    width: 100%;
+}
+ 
+footer p {
+    color: white;
+    padding-left: 4em;
+    font-size: 1em;
+}
+
+footer p:hover {
+    color:gray;
+}
+
+footer p a { 
+    color: #fff;
+    text-decoration: none;
+}   
+
+footer p a:hover {
+    color:gray;
 }
