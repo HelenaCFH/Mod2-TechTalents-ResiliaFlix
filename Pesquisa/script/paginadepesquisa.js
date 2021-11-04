@@ -17,12 +17,14 @@ class Controller
     }
 }
 
-document.getElementById("search-form").addEventListener()
+document.getElementById("search-form").addEventListener("search", function(){triggerSearch()})
 
 
 function storeUserInput()//pega a string inserida no formulário de busca
-{
+{       
+        console.log("entrada")
         alert("Busca realizada!")
+
         let userInput = document.getElementById("search-form").value;
         return userInput
         //alert(userInput) teste de funcionalidade
