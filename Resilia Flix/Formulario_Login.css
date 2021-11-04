@@ -23,8 +23,7 @@ header {
 }
 
 body {
-  background: linear-gradient(rgb(30, 30, 30), rgb(0, 210, 217));
-  background-repeat:no-repeat;
+  background: black;
 }
   
   ul, li {
