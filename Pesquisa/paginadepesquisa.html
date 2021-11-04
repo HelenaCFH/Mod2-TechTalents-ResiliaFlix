@@ -9,6 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css"/>
         <link rel="stylesheet" href="css/paginadepesquisa.css"/>
+        <script src="script/paginadepesquisa.js"></script>
         
         <title>Pesquisar na Resiliaflix</title>
     </head>
@@ -53,12 +54,9 @@
                         Procurar filmes
                     </span>
                     <form>
-                        <input type="search" class="form-control" placeholder="Digite o nome do filme e pressione Enter/Ir" id="search-form">
+                        <input type="search" id="search-form" class="form-control" placeholder="Digite o nome do filme e pressione Enter/Ir" onsearch="triggerSearch()">
                     </form>
                 </div>
-                <!--<div class="container-fluid" id="container-img">
-                    <img src="/Pesquisa/img/popcorn.png">
-                </div>-->
             </main>
         </div>
     </body>
