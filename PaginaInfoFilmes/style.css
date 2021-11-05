@@ -31,6 +31,31 @@
     background-repeat: no-repeat;
     background-size: cover; 
 }
+
+.bg_constantine{
+    background-image: url(img/contantine_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_orgulhopreconceito{
+    background-image: url(img/orgulhopreconceito_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_croods2{
+    background-image: url(img/croods_2_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_croods{
+    background-image: url(img/croods_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
 .banner{
     position:relative; 
     width: 100%;
@@ -99,6 +124,30 @@
     padding-left: 10px;
 }
 
+.movieTitleConstantine{
+    max-width:400px;
+    padding-bottom: 0px;
+    padding-top:200px ;
+}
+
+.movieTitleOrgulhopreconceito{
+    max-width:450px;
+    padding-bottom: 0px;
+    padding-top:300px ;
+}
+
+.movieTitleCroods{
+    max-width:1000px;
+    padding-bottom: 0px;
+    padding-top:250px ;
+}
+
+.movieTitleCroods2{
+    max-width:400px;
+    padding-bottom: 20px;
+    padding-top:250px ;
+}
+
 .banner .content h4{
     color: white;
     font-weight: 350;
@@ -111,6 +160,8 @@
     text-align: justify;
     padding-left: 30px;
 }
+
+
 
 footer {
     display: flex;
