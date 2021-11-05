@@ -3,17 +3,16 @@ document.getElementById("search-form").addEventListener("search", function(){tri
 function triggerSearch()//eventHandler
 {
     let movieArray = createMoviesList()
-    let userInput = storeUserInput();
+    let userInput = document.getElementById("search-form").value;
     let userInputLCase = userInput.toLowerCase()
     let askForInput = "Digite um nome!"
-    let resultsArray = []
-    //userInput.toLowerCase()
+    var resultsArray = []
 
     if (userInput != "")//valida se o input é válido e dá uma mensagem de erro em caso negativo.
     {
         //alert (userInputLCase) teste de funcionalidade
 
-        for (var i = 0; i < movieArray.length; i++)
+        for (let i = 0; i < movieArray.length; i++)
         {
             //alert(movieArray[i]) teste de funcionalidade
             if (movieArray[i].includes(userInputLCase))
@@ -33,9 +32,8 @@ function triggerSearch()//eventHandler
         }
         else
         {
-            alert(resultsArray)
+            return resultsArray
         }
-        
     }
     else
     {
@@ -43,24 +41,19 @@ function triggerSearch()//eventHandler
     }
 }
 
+function createCards()
+{
+    let addLI = []
+    var addA = []
 
-
-
-
-
-
+    for(let i = 0; i<resultsArray.length; i++)
+    {
+        addLI[i] = new boot
+    }
+}
 
 function createMoviesList()
 {
     let moviesList = ["a fantástica fábrica de chocolate", "a velha guarda", "batman: o cavaleiro das trevas ressurge", "constantine", "harry potter e a pedra filosofal", "kate", "marrocos", "matrix", "onde vivem os monstros", "orgulho e preconceito", "os croods", "os croods 2"]
     return moviesList
-}
-
-function storeUserInput()//pega a string inserida no formulário de busca
-{       
-        alert("Busca realizada!")
-
-        let userInput = document.getElementById("search-form").value;
-        return userInput
-        //alert(userInput) teste de funcionalidade
 }

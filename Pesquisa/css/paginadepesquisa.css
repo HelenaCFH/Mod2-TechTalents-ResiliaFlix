@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 200%;
 }
 
 header {
@@ -73,6 +74,22 @@ main {
     border-radius: 10px;
     text-align: center;
     height: 35px;
+}
+
+#list-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    visibility: visible;
+    margin: 5px 5px;
+    border-radius: 10px;
+}
+
+.card-title{
+    text-align: center;
 }
 
 footer {
