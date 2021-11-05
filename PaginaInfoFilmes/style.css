@@ -1,0 +1,215 @@
+.bg_batman{
+    background-image: url(img/batman_o_cavaleiro_das_trevas_2_widelg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.bg_morocco{
+    background-image: url(img/morocco_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.bg_matrix{
+    background-image: url(img/11001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.bg_oldguard{
+    background-image: url(img/theoldguard_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_HP{
+    background-image: url(img/HP_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg_fabricachocolate{
+    background-image: url(img/a-fantastica-fabrica-de-chocolate-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_constantine{
+    background-image: url(img/contantine_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_orgulhopreconceito{
+    background-image: url(img/orgulhopreconceito_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_croods2{
+    background-image: url(img/croods_2_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_croods{
+    background-image: url(img/croods_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.bg_kate{
+    background-image: url(img/kate_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_ondevivemosmonstros{
+    background-image: url(img/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.banner{
+    position:relative; 
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.banner.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+
+.content{
+    
+    position: absolute;
+    left:0;
+    padding-left: 70px;
+    padding-top: 100px;
+    z-index: 1;
+    max-width: 750px;
+    text-align: justify;
+    color: white;
+    font-size: 15px;   
+}
+
+.movieTitleBatman{
+    max-width:500px;
+    padding-bottom: 10px;
+    padding-top:200px ;
+}
+
+.movieTitleMarocco{
+    max-width:600px;
+    padding-bottom: 10px;
+    padding-top:100px ;
+}
+
+.movieTitleMatrix{
+    max-width:600px;
+    padding-bottom: 50px;
+    padding-top:100px ;
+}
+
+.movieTitleOldGuard{
+    max-width:450px;
+    padding-bottom: 0px;
+    padding-top:180px ;
+}
+
+.movieTitleHP{
+    max-width:350px;
+    padding-bottom: 0px;
+    padding-top:220px ;
+}
+
+.movieTitlefabricachocolate{
+    max-width:1000px;
+    padding-bottom: 0px;
+    padding-top:220px ;
+    padding-left: 10px;
+}
+
+.movieTitleConstantine{
+    max-width:400px;
+    padding-bottom: 0px;
+    padding-top:200px ;
+}
+
+.movieTitleOrgulhopreconceito{
+    max-width:450px;
+    padding-bottom: 0px;
+    padding-top:300px ;
+}
+
+.movieTitleCroods{
+    max-width:1000px;
+    padding-bottom: 0px;
+    padding-top:250px ;
+}
+
+.movieTitleCroods2{
+    max-width:400px;
+    padding-bottom: 20px;
+    padding-top:250px ;
+}
+
+.movieTitleKate{
+    max-width:300px;
+    padding-bottom: 20px;
+    padding-top:200px ;
+}
+
+.movieTitleOndeVivemOsMonstros{
+    max-width:600px;
+    padding-bottom: 10px;
+    padding-top:180px ;
+}
+.banner .content h4{
+    color: white;
+    font-weight: 350;
+    padding-left: 30px ;
+}
+
+.banner .content p{
+    font-weight: 100 ;
+    color: white;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    justify-content: center;
+    padding: 3em;
+    margin-top: 1em;
+    width: 100%;
+    position:absolute;
+    top:100%;
+}
+ 
+footer p {
+    color: white;
+    padding-left: 4em;
+    font-size: 1em;
+}
+
+footer p:hover {
+    color:gray;
+}
+
+footer p a { 
+    color: #fff;
+    text-decoration: none;
+}   
+
+footer p a:hover {
+    color:gray;
+}
