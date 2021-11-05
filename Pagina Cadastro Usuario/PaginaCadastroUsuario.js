@@ -1,11 +1,11 @@
 /*MENSAGEM PREENCHIMENTO CAMPOS*/ 
 
-var sessoesArr = document.querySelectorAll('input');
+var sessoesReq = document.querySelectorAll('requisito');
 
 function validaFormulario() {
     let contador = 0
-    for(var i = 0; i < sessoesArr.length; i++) {
-        if (sessoesArr[i].value == '') {
+    for(var i = 0; i < sessoesReq.length; i++) {
+        if (sessoesReq[i].value == '') {
             contador += 1;
         }
     }
@@ -13,7 +13,8 @@ function validaFormulario() {
         let toastLive = document.getElementById('toast-confimacao');
         let toast = new bootstrap.Toast(toastLive);
         toast.show();
-    //    limpaTodosCampos();
+        limpaTodosCampos();
+        document.getElementById('botaoContinuar').value = "Continuar"
     } else {
         let toastLive = document.getElementById('toast-erro');
         let toast = new bootstrap.Toast(toastLive);
@@ -45,13 +46,16 @@ function mensagemSenha() {
     }
 }
 
-/*
+var todosCampos = document.querySelectorAll('input');
+
 function limpaTodosCampos() { 
-    for(var i = 0; i < sessoesArr.length; i++) {
-        sessoesArr[i].value = ''
+    for(var i = 0; i < todosCampos.length; i++) {
+        todosCampos[i].value = ''
     }
 }
-*/
+
+
+
 
 /* CHAMADAS */
 
