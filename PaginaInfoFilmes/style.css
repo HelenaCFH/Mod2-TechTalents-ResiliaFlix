@@ -56,6 +56,18 @@
     background-size: cover; 
 
 }
+
+.bg_kate{
+    background-image: url(img/kate_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_ondevivemosmonstros{
+    background-image: url(img/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
 .banner{
     position:relative; 
     width: 100%;
@@ -148,6 +160,17 @@
     padding-top:250px ;
 }
 
+.movieTitleKate{
+    max-width:300px;
+    padding-bottom: 20px;
+    padding-top:200px ;
+}
+
+.movieTitleOndeVivemOsMonstros{
+    max-width:600px;
+    padding-bottom: 10px;
+    padding-top:180px ;
+}
 .banner .content h4{
     color: white;
     font-weight: 350;
@@ -160,8 +183,6 @@
     text-align: justify;
     padding-left: 30px;
 }
-
-
 
 footer {
     display: flex;
