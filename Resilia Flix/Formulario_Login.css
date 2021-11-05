@@ -275,3 +275,37 @@ body {
     transform: translateY(-50%);
     left: 0;
   }
+
+  <footer>
+  <p> Política de privacidade </p>
+  <p> Termos de uso </p>
+  <p> @2021 ResiliaFlix. Todos os direitos reservados </p>
+  <p> <a href="#">Entre em contato conosco</a></p>
+</footer>
+footer {
+display: flex;
+background-color: rgb(30, 30, 30);
+justify-content: center;
+padding: 3em;
+margin-top: 1em;
+width: 100%;
+}
+
+footer p {
+color: white;
+padding-left: 4em;
+font-size: 1em;
+}
+
+footer p:hover {
+color:gray;
+}
+
+footer p a { 
+color: #fff;
+text-decoration: none;
+}
+
+footer p a:hover {
+color:gray;
+}
