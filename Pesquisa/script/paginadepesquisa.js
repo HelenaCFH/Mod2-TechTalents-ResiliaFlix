@@ -4,17 +4,38 @@ function triggerSearch()//eventHandler
 {
     let movieArray = createMoviesList()
     let userInput = storeUserInput();
+    let userInputLCase = userInput.toLowerCase()
     let askForInput = "Digite um nome!"
+    let resultsArray = []
+    //userInput.toLowerCase()
 
     if (userInput != "")//valida se o input é válido e dá uma mensagem de erro em caso negativo.
     {
-        alert ("continuar busca!")//teste de funcionalidade
+        //alert (userInputLCase) teste de funcionalidade
 
         for (var i = 0; i < movieArray.length; i++)
         {
             //alert(movieArray[i]) teste de funcionalidade
-            
-        } 
+            if (movieArray[i].includes(userInputLCase))
+            {
+                resultsArray.push(movieArray[i])
+                //alert (resultsArray)
+            }
+            else
+            {
+                continue
+            }
+        }
+
+        if(resultsArray.length == 0)
+        {
+            alert("Filme não encontrado!")
+        }
+        else
+        {
+            alert(resultsArray)
+        }
+        
     }
     else
     {
@@ -31,7 +52,7 @@ function triggerSearch()//eventHandler
 
 function createMoviesList()
 {
-    let moviesList = ["A Fantástica Fábrica de Chocolate", "A Velha Guarda", "Batman: O cavaleiro das trevas ressurge", "Constantine", "Harry Potter e a Pedra Filosofal", "Kate", "Marrocos", "Matrix", "Onde Vivem os Monstros", "Orgulho e Preconceito", "Os Croods", "Os Croods 2"]
+    let moviesList = ["a fantástica fábrica de chocolate", "a velha guarda", "batman: o cavaleiro das trevas ressurge", "constantine", "harry potter e a pedra filosofal", "kate", "marrocos", "matrix", "onde vivem os monstros", "orgulho e preconceito", "os croods", "os croods 2"]
     return moviesList
 }
 
