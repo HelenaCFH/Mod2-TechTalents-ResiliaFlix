@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    background: rgb(0,0,0);
+    padding: 14px 0 0 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+ 
+header img{
+    width: 200px;
+}
+
+.menu_list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+    text-align: right;
+    font-size: large;
+}
+
+.menu_list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu_list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_list li a:hover{
+    color:gray;
+}
+
+main {
+    position: absolute; /*trocar para fixed caso queira a imagem flutuante*/
+    margin: 0;
+    top: 75px;
+    left: 0;
+    display: flex;
+    height: 115%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-image: url("bg1.jpg"), radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1));
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#container-searchbox{
+    position: relative;
+    height: fit-content;
+    width: 60%;
+    top: 30px;
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+#search-movies {
+    display:inline-block;
+    padding: 0 30px 5px 0;
+}
+
+#search-form {
+    border-radius: 10px;
+    text-align: center;
+    height: 35px;
+}
+
+#container-searchresults {
+    position: absolute;
+    top: 20%;
+}
+
+#list-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#link0 {
+    visibility: hidden;
+}
+
+#link1 {
+    visibility: hidden;
+}
+
+#link2 {
+    visibility: hidden;
+}
+
+#link3 {
+    visibility: hidden;
+}
+
+#link4 {
+    visibility: hidden;
+}
+
+#link5 {
+    visibility: hidden;
+}
+
+#link6 {
+    visibility: hidden;
+}
+
+#link7 {
+    visibility: hidden;
+}
+
+#link8 {
+    visibility: hidden;
+}
+
+#link9 {
+    visibility: hidden;
+}
+
+#link10 {
+    visibility: hidden;
+}
+
+#link11 {
+    visibility: hidden;
+}
+
+li img {
+height: 180px;
+width: 280px;
+margin: 10px;
+}
+
+li img:hover {
+    height: 200px;
+    Width: 300px;
+}
+
+footer {
+    position: absolute;
+    left:0;
+    top: 115%;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    justify-content: center;
+    padding: 3em;
+    margin-top: 1em;
+    width: 100%;
+}
+ 
+footer p {
+    color: white;
+    padding-left: 4em;
+    font-size: 1em;
+}
+
+footer p:hover {
+    color:gray;
+}
+
+footer p a { 
+    color: #fff;
+    text-decoration: none;
+}   
+
+footer p a:hover {
+    color:gray;
+}
