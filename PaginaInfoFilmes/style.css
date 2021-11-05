@@ -3,6 +3,34 @@
     background-repeat: no-repeat;
     background-size: cover;   
 }
+
+.bg_morocco{
+    background-image: url(img/morocco_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.bg_matrix{
+    background-image: url(img/11001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.bg_oldguard{
+    background-image: url(img/theoldguard_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg_HP{
+    background-image: url(img/HP_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg_fabricachocolate{
+    background-image: url(img/a-fantastica-fabrica-de-chocolate-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
 .banner{
     position:relative; 
     width: 100%;
@@ -31,23 +59,52 @@
     max-width: 750px;
     text-align: justify;
     color: white;
-    font-size: 15px;
-    
-
-   
+    font-size: 15px;   
 }
+
 .movieTitleBatman{
+    max-width:500px;
+    padding-bottom: 10px;
+    padding-top:200px ;
+}
+
+.movieTitleMarocco{
+    max-width:600px;
+    padding-bottom: 10px;
+    padding-top:100px ;
+}
+
+.movieTitleMatrix{
     max-width:600px;
     padding-bottom: 50px;
     padding-top:100px ;
-
-   
 }
+
+.movieTitleOldGuard{
+    max-width:450px;
+    padding-bottom: 0px;
+    padding-top:180px ;
+}
+
+.movieTitleHP{
+    max-width:350px;
+    padding-bottom: 0px;
+    padding-top:220px ;
+}
+
+.movieTitlefabricachocolate{
+    max-width:1000px;
+    padding-bottom: 0px;
+    padding-top:220px ;
+    padding-left: 10px;
+}
+
 .banner .content h4{
     color: white;
     font-weight: 350;
     padding-left: 30px ;
 }
+
 .banner .content p{
     font-weight: 100 ;
     color: white;
