@@ -1,52 +1,45 @@
-class Model 
+document.getElementById("search-form").addEventListener("search", function(){triggerSearch()})//eventListener
+
+function triggerSearch()//eventHandler
 {
-    constructor() {}
-}
-  
-class View 
-{
-    constructor() {}
-}
-  
-class Controller 
-{
-    constructor(model, view) 
+    let movieArray = createMoviesList()
+    let userInput = storeUserInput();
+    let askForInput = "Digite um nome!"
+
+    if (userInput != "")//valida se o input é válido e dá uma mensagem de erro em caso negativo.
     {
-        this.model = model
-        this.view = view
+        alert ("continuar busca!")//teste de funcionalidade
+
+        for (var i = 0; i < movieArray.length; i++)
+        {
+            //alert(movieArray[i]) teste de funcionalidade
+            
+        } 
+    }
+    else
+    {
+        alert(askForInput)
     }
 }
 
-document.getElementById("search-form").addEventListener("search", function(){triggerSearch()})
 
+
+
+
+
+
+
+function createMoviesList()
+{
+    let moviesList = ["A Fantástica Fábrica de Chocolate", "A Velha Guarda", "Batman: O cavaleiro das trevas ressurge", "Constantine", "Harry Potter e a Pedra Filosofal", "Kate", "Marrocos", "Matrix", "Onde Vivem os Monstros", "Orgulho e Preconceito", "Os Croods", "Os Croods 2"]
+    return moviesList
+}
 
 function storeUserInput()//pega a string inserida no formulário de busca
 {       
-        console.log("entrada")
         alert("Busca realizada!")
 
         let userInput = document.getElementById("search-form").value;
         return userInput
         //alert(userInput) teste de funcionalidade
 }
-
-function validateInput()//mostra mensagem "digite um nome!" caso o usuário não digite nada
-{
-    let userInput = storeUserInput();
-
-    if (userInput != "")
-    {
-        alert ("continuar busca!")
-        return userInput
-    }
-    else
-    {
-        alert ("Digite um nome!")//placeholder, substituir pelo toast
-    }
-}
-
-function triggerSearch()
-{
-    validateInput();
-}
-
