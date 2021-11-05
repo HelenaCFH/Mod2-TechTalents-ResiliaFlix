@@ -36,28 +36,34 @@ body {
  .menu_list li a:hover{
     color:gray;
 }
+/*Contato*/
 .card-deck {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;    
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+    
 }
 
 .card {
     margin: 3em;
-    width: 10%;
+    width: 15%;
     background:rgba(0, 255, 255, 0) ;
     border: 0;    
+    
+}
+.rounded-circle {
+    display: center;
 }
 .card-title {
-    text-align: center;
+    text-align:center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em ;
     color:#fff ;
 }
 
 .redes {
-    display: flex;
+    display:flex;
     justify-content: center;
 }
 
@@ -72,6 +78,7 @@ footer {
     justify-content: center;
     padding: 3em;
     margin-top: 1em;
+    width: 100%;
 }
  
 footer p {
@@ -81,5 +88,14 @@ footer p {
 }
 
 footer p:hover {
+    color:gray;
+}
+
+footer p a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
     color:gray;
 }
