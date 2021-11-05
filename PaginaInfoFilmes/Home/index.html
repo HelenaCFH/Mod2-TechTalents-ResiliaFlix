@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css"/>
+    <script type="text/javascript" src="script.js"> </script>
+    <title>Home</title>
+</head>
+
+<body class="corpo_de_fundo .bg-info.bg-gradient">   
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-2" >
+                <img src="img/logo.png"/>
+            </div>
+            <div class="col-8">
+                <ul class="menu_list">
+                    <li>
+                        <a href="#">Página Inicial</a>
+                    </li>  
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-magnify text-white">
+                                Busca
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mdi mdi-account text-white"></span> 
+                            Usuárie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn">
+                            <span class="mdi mdi-logout-variant"></span>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div id="hero" class="container-fluid">
+        <div class="container">
+            <div class="row" id="hero-infos">
+                <div class="col-6">
+                    <img class="logo" src="img/logo.png"/>
+                    <h2 class="text-white">O melhor serviço de streaming do Brasil!</h2>
+                    <p class="text-white">
+                        O nosso serviço oferece acesso aos seus filmes favoritos de forma ágil e prática!
+                    </p>
+                    <br/>
+                   
+                    <button type="button" class="btn btn-lg btn-outline-light btn-custom-white">
+                        <spam class="mdi mdi-play"></spam>Assistir agora!
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="area-filmes">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            Os mais populares!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="lista_filmes">
+                    <li class="filme">
+                        <a href="../DescricaoFilmes/index.html?nomeFilme=Kate">
+                            <img class="img-fluid" src="img/FilmeKateMiniatura.jpg"/>
+                            <div class="filme_infos">
+                                <div class="col-12">
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-play"></span>
+                                    </a>                                   
+                                    <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                        <span class="mdi mdi-thumb-up text-white"></span>
+                                    </a>
+                                    <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                        <span class="mdi mdi-thumb-down text-white"></span>
+                                    </a>
+                                    <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                        <span class="mdi mdi-plus text-white"></span>
+                                    </a>                        
+                                </div>
+                                <p>106min<text>2021</text></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeTheOldGuard.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>2h5min <text>2020</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeOndeVivemOsMonstros.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>1h41min <text>2009</text></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            Os mais populares!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="lista_filmes">
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMatrix.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>2h18min <text>2003</text></p>
+                        </div>
+                    </li>
+                    
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeConstantine.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>2h1min <text>2005/text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeOrgulhoePreconceito.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>2h7min <text>2005</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeBatman.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>2h32min <text>2008</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            Os mais populares!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="lista_filmes">
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeKateMiniatura.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            Os mais populares!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="lista_filmes">
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeKateMiniatura.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            Os mais populares!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="lista_filmes">
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeKateMiniatura.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    <li class="filme">
+                        <img class="img-fluid" src="img/FilmeMarrocos.jpg"/>
+                        <div class="filme_infos">
+                            <div class="col-12">
+                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                    <span class="mdi mdi-play"></span>
+                                </a>                                   
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-up text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-thumb-down text-white"></span>
+                                </a>
+                                <a href="#" class="btn-custom-round border-white btn rounded-circle opacity-50">
+                                    <span class="mdi mdi-plus text-white"></span>
+                                </a>                        
+                            </div>
+                            <p>91min <text>1930</text></p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+    </div>
+    
+</body>
+</html>
