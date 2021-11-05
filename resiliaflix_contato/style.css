@@ -1,9 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(rgb(30, 30, 30), rgb(0, 210, 217));
-    background-repeat:no-repeat;
-       
- }
+    background-repeat:no-repeat;      
+}
 
  header {
      padding: 2em;
@@ -37,29 +36,23 @@ body {
  .menu_list li a:hover{
     color:gray;
 }
-/*principal*/
 .card-deck {
-    width: 150%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    
-}
-.card {
-    margin: 4em;
-    width: 10%;
-    background:rgba(0, 255, 255, 0) ;
-    border: 0;
-    
-}
-.card-img-top {
-    background: 
+    flex-wrap: wrap;    
 }
 
+.card {
+    margin: 3em;
+    width: 10%;
+    background:rgba(0, 255, 255, 0) ;
+    border: 0;    
+}
 .card-title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em ;
+    font-size: 1.3em ;
     color:#fff ;
 }
 
