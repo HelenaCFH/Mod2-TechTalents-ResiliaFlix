@@ -87,6 +87,10 @@ main {
     justify-content: center;
 }
 
+#link0 {
+    visibility: hidden;
+}
+
 #link1 {
     visibility: hidden;
 }
@@ -116,10 +120,6 @@ main {
 }
 
 #link8 {
-    visibility: hidden;
-}
-
-#link9 {
     visibility: hidden;
 }
 
