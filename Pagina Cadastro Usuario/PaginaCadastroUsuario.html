@@ -67,7 +67,7 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
             </div>
         </main>
 
-        <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive"
+        <div class="toast align-items-center text-white bg-primary border-0" style="position: absolute; top: 30%; right: 35%" role="alert" aria-live="assertive"
         aria-atomic="true" id="toast-confimacao">
             <div class="d-flex">
                 <div class="toast-body">
@@ -78,7 +78,7 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
             </div>
         </div>
 
-        <div class="toast align-items-center top-center text-white bg-danger border-0" role="alert" aria-live="assertive"
+        <div class="toast align-items-center top-center text-white bg-danger border-0" style="position: absolute; top: 100%; right: 35%" role="alert" aria-live="assertive"
         aria-atomic="false" id="toast-erro">
             <div class="d-flex">
                 <div class="toast-body">
@@ -89,11 +89,22 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
             </div>
         </div>
 
-        <div class="toast align-items-center top-center text-white bg-danger border-0" role="alert" aria-live="assertive"
+        <div class="toast align-items-center top-center text-white bg-danger border-0" style="position: absolute; top: 75%; right: 30%" role="alert" aria-live="assertive"
         aria-atomic="false" id="toast-erro-cep">
             <div class="d-flex">
                 <div class="toast-body">
                 CEP não encontrado! Favor inserir um CEP válido utilizando apenas números!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="toast align-items-center top-center text-white bg-danger border-0" style="position: absolute; top: 65%; right: 30%" role="alert" aria-live="assertive"
+        aria-atomic="false" id="toast-erro-senha">
+            <div class="d-flex">
+                <div class="toast-body">
+                Verifique novamente a senha digitada!
                 </div>
                 <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
                 aria-label="Close"></button>

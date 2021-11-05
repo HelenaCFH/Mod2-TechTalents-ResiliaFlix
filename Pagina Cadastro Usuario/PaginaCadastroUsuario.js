@@ -13,6 +13,7 @@ function validaFormulario() {
         let toastLive = document.getElementById('toast-confimacao');
         let toast = new bootstrap.Toast(toastLive);
         toast.show();
+    //    limpaTodosCampos();
     } else {
         let toastLive = document.getElementById('toast-erro');
         let toast = new bootstrap.Toast(toastLive);
@@ -36,7 +37,25 @@ function validaSenha(senha1, senha2) {
     }
 }
 
+function mensagemSenha() {
+    if (validaSenha(document.getElementById('senha1').value, document.getElementById('senha2').value) == false) {
+        let toastLive = document.getElementById('toast-erro-senha');
+        let toast = new bootstrap.Toast(toastLive);
+        toast.show();
+    }
+}
 
+/*
+function limpaTodosCampos() { 
+    for(var i = 0; i < sessoesArr.length; i++) {
+        sessoesArr[i].value = ''
+    }
+}
+*/
+
+/* CHAMADAS */
+
+document.getElementById("senha2").addEventListener('focusout', mensagemSenha);
 document.getElementById("botaoContinuar").addEventListener('click', validaFormulario);
 
 
