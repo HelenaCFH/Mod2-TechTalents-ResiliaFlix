@@ -16,3 +16,33 @@ body{
     margin-left: 35.5%;
     width: 29%;
 }
+
+footer {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    justify-content: center;
+    padding: 3em;
+    margin-top: 1em;
+    width: 100%;
+    position:absolute;
+    top:100%;
+}
+ 
+footer p {
+    color: white;
+    padding-left: 4em;
+    font-size: 1em;
+}
+
+footer p:hover {
+    color:gray;
+}
+
+footer p a { 
+    color: #fff;
+    text-decoration: none;
+}   
+
+footer p a:hover {
+    color:gray;
+}
