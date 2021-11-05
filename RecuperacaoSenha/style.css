@@ -1,0 +1,18 @@
+body{
+    padding-top: 100px; 
+    background-image:url(img/cb16d9a7e674892964d2273b4e7bfd44.jpg);
+}
+ 
+ .card {
+    width: 29%;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+.toast {
+    margin-left: 35.5%;
+    width: 29%;
+}
