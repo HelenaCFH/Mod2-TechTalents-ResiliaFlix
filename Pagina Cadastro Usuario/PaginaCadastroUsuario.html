@@ -44,14 +44,15 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
 
 
         <main>
+
             <div class="bloco">
                 <h2> Criar Conta </h2>
 
                 <form>
                     <input type="text" class="campoInteiro" required placeholder="Nome">
                     <input type="email" class="campoInteiro" id="email" required placeholder="E-mail">
-                    <input type="password" class="meioCampo" required placeholder="Senha">
-                    <input type="password" class="meioCampo" required placeholder="Confirmação de Senha">
+                    <input type="password" class="meioCampo" id="senha1" required placeholder="Senha">
+                    <input type="password" class="meioCampo" id="senha2" required placeholder="Confirmação de Senha">
                     <input type="text" class="meioCampo" required placeholder="RG"> 
                     <input type="text" class="meioCampo" id="cep" required placeholder="CEP">
                     <input type="text" id="rua" required placeholder="Rua">
@@ -77,8 +78,8 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
             </div>
         </div>
 
-        <div class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive"
-        aria-atomic="true" id="toast-erro">
+        <div class="toast align-items-center top-center text-white bg-danger border-0" role="alert" aria-live="assertive"
+        aria-atomic="false" id="toast-erro">
             <div class="d-flex">
                 <div class="toast-body">
                 Houve um erro! Favor verificar os campos preenchidos!
@@ -88,6 +89,16 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
             </div>
         </div>
 
+        <div class="toast align-items-center top-center text-white bg-danger border-0" role="alert" aria-live="assertive"
+        aria-atomic="false" id="toast-erro-cep">
+            <div class="d-flex">
+                <div class="toast-body">
+                CEP não encontrado! Favor inserir um CEP válido utilizando apenas números!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+            </div>
+        </div>
 
         <footer>
             <p> Política de privacidade </p>
@@ -97,5 +108,6 @@ Campos de endereço (estado, cidade, bairro, rua, numero, complemento)
         </footer>
 
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="PaginaCadastroUsuario.js"></script>
 </html>

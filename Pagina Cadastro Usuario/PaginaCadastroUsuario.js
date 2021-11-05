@@ -9,24 +9,37 @@ function validaFormulario() {
             contador += 1;
         }
     }
-    if (contador == 0) {
-        alert("Cadastro realizado com Sucesso!")
-        return true
+    if (contador == 0 && validaEmail(document.getElementById('email').value) && validaSenha(document.getElementById('senha1').value, document.getElementById('senha2').value)) {
+        let toastLive = document.getElementById('toast-confimacao');
+        let toast = new bootstrap.Toast(toastLive);
+        toast.show();
     } else {
-        alert("Favor preencher os dados solicitados para efetivar o cadastro!")
-        return false
+        let toastLive = document.getElementById('toast-erro');
+        let toast = new bootstrap.Toast(toastLive);
+        toast.show();
     }
 }
 
 function validaEmail(email) {
-    if ((email.toString()).includes('@') == false) {
-        alert("Insira um e-mail válido")
-    } 
+    if (email.toString().includes('@') == true) {
+        return true
+    } else {
+        return false
+    }
 } 
 
+function validaSenha(senha1, senha2) {
+    if (senha1 == senha2) {
+        return true
+    } else {
+        return false
+    }
+}
 
-document.getElementById("email").addEventListener('focusout', validaEmail(document.getElementById('email')));
+
 document.getElementById("botaoContinuar").addEventListener('click', validaFormulario);
+
+
 
 
 /*API VIACEP*/ 
@@ -57,12 +70,16 @@ const pesquisaCep = async() => {
         const dados = await fetch(url);
         const endereco = await dados.json();
         if(endereco.hasOwnProperty('erro')) {
-            alert("CEP não encontrado! Favor inserir um CEP válido");
+            let toastLive = document.getElementById('toast-erro-cep');
+            let toast = new bootstrap.Toast(toastLive);
+            toast.show();
         } else {
             preencheFormulario(endereco);
         }
     } else {
-        alert("CEP não encontrado! Favor inserir um CEP válido");
+        let toastLive = document.getElementById('toast-erro-cep');
+        let toast = new bootstrap.Toast(toastLive);
+        toast.show();
     }
 }
 

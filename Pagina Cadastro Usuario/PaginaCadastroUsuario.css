@@ -140,7 +140,7 @@ footer p a:hover {
 /* TOAST */
 
 .toast {
-    margin-left: 35.5%;
+    margin: auto;
     width: 29%;
 }
 
@@ -149,7 +149,7 @@ footer p a:hover {
 
 /* MEDIA QUERY - MOBILE */
 
-@media screen and (max-width:948px) {
+@media screen and (max-width:950px) {
     
     .campoInteiro, .meioCampo, #rua, #numero, #botaoContinuar {
        width: 100%; 
