@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+    background-color: rgb(30, 30, 30);
 }
 
 header {
@@ -49,8 +50,8 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 
-    background-image: url("bg4.png"), radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1));
-    background-repeat: no-repeat;
+    background-image: url("bg1.jpg"), radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1));
+    background-repeat:repeat-y;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -120,6 +121,18 @@ main {
 }
 
 #link8 {
+    visibility: hidden;
+}
+
+#link9 {
+    visibility: hidden;
+}
+
+#link10 {
+    visibility: hidden;
+}
+
+#link11 {
     visibility: hidden;
 }
 
