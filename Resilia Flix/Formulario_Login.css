@@ -1,26 +1,3 @@
-/* header {
-  padding: 50px;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 2;
-}
-.menu_list {
-  list-style: none;
-  padding-left: 0;
-  padding-top: 5px;
-  text-align: right;
-  font-size: large;
-}
-.menu_list li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.menu_list li a {
-  color: #fff;
-  text-decoration: none;
-} */
 header {
   padding-left: 2em;
   width: 100%;
@@ -56,6 +33,8 @@ header img {
 }
 
 body {
+  font-family:sans-serif;
+  
   background: black;
 }
   
@@ -276,12 +255,6 @@ body {
     left: 0;
   }
 
-  <footer>
-  <p> Política de privacidade </p>
-  <p> Termos de uso </p>
-  <p> @2021 ResiliaFlix. Todos os direitos reservados </p>
-  <p> <a href="#">Entre em contato conosco</a></p>
-</footer>
 footer {
 display: flex;
 background-color: rgb(30, 30, 30);
